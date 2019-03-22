@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-filter-public_ip'
-  s.version       = '1.0.0'
+  s.version       = '1.0.1'
   s.licenses      = ['Apache-2.0']
   s.summary       = 'IP version and Public check'
-  s.description   = 'checks version and if the ip is public'
+  s.description   = 'logstash plugin that checks ip version and if the ip is public'
   s.homepage      = 'https://github.com/Vigilant-LLC/logstash-filter-public_ip'
   s.authors       = ['Mike Pananen']
   s.email         = 'panaman@geekempire.com'
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   # Files
   s.files = Dir['lib/**/*','spec/**/*','vendor/**/*','*.gemspec','*.md','CONTRIBUTORS','Gemfile','LICENSE','NOTICE.TXT']
-   # Tests
+  # Tests
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
 
   # Special flag to let us know this is actually a logstash plugin
@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
-  s.add_development_dependency 'logstash-devutils'
+  s.add_development_dependency 'logstash-devutils', '= 1.3.6'
 end

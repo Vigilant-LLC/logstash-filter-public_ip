@@ -1,3 +1,6 @@
+## 1.0.1
+  - removed ipvlookup class and placed code in main plugin
+  - improved speed on lookup
 ## 1.0.0
   - changed array lookup
 ## 0.1.1

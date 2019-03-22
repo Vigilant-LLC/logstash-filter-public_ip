@@ -71,4 +71,21 @@ describe LogStash::Filters::PublicIp do
     end
   end
 
+  describe "no valid source" do
+    let(:config) do <<-CONFIG
+      filter {
+        public_ip {
+          source => "ip"
+          target_ipv => "ipv"
+          target_pub_ip => "pubip"
+        }
+      }
+    CONFIG
+    end
+
+    sample("ip" => nil) do
+      expect(subject.get("tags")).to include("_invalid_ip")
+    end
+  end
+
 end
