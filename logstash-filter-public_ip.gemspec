@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-filter-public_ip'
-  s.version       = '1.0.1'
+  s.version       = '1.0.2'
   s.licenses      = ['Apache-2.0']
   s.summary       = 'IP version and Public check'
   s.description   = 'logstash plugin that checks ip version and if the ip is public'

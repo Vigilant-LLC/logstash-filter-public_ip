@@ -1,3 +1,5 @@
+## 1.0.2
+ - fixed bad release of gem
 ## 1.0.1
   - removed ipvlookup class and placed code in main plugin
   - improved speed on lookup
